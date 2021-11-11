@@ -1,0 +1,6 @@
+file = open("aplusbb.in.", "r")
+lines = file.readlines()
+input_1, input_2 = int(lines[0].split()[0]), int(lines[0].split()[1])
+file_output = open("aplusbb.out", 'w')
+file_output.write(str(input_1 + input_2 ** 2))
+file_output.close()
